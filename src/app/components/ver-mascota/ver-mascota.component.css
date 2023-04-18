@@ -1,0 +1,10 @@
+.container {
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+.card {
+    margin-top: 5px;
+    text-align: center;
+    align-items: center;
+}
