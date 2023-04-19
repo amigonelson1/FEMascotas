@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-//modulos
-//modulo para formularios reactivos
+//modulos;
+//modulo para formularios reactivos;
 import { ReactiveFormsModule } from '@angular/forms';
+//modulo para conexiones;
+import { HttpClientModule } from '@angular/common/http';
 
-//angular material
+//angular material;
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -20,7 +22,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatGridListModule } from '@angular/material/grid-list';
 
-//componentes
+//componentes;
 import { SpinnerComponent } from './spinner/spinner.component';
 
 
@@ -45,6 +47,8 @@ import { SpinnerComponent } from './spinner/spinner.component';
     MatGridListModule,
     //el siguiente modulo debe importarse y exportarse para los form reactivos;
     ReactiveFormsModule,
+    //el siguiente modulo es para hacer las conexiones;
+    HttpClientModule,
   ],
   exports: [
     MatSlideToggleModule,
@@ -62,6 +66,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
     MatProgressBarModule,
     MatGridListModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ]
 })
 export class SharedModule { }
